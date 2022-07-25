@@ -18,17 +18,13 @@
 PRODUCT_RELEASE_NAME := a12s
 
 # Inherit from common AOSP config
-$(call inherit-product, $(SRC_TARGET_DIR)/product/base.mk)
+$(call inherit-product, $(SRC_TARGET_DIR)/product/aosp_base.mk)
 
 # Inherit some common TWRP stuff.
 $(call inherit-product, vendor/twrp/config/common.mk)
 
 # Inherit device configuration
 $(call inherit-product, device/samsung/a12s/device.mk)
-
-PRODUCT_USE_DYNAMIC_PARTITIONS := true
-
-TARGET_OTA_ASSERT_DEVICE := a12s
 
 
 # Charger
@@ -44,9 +40,3 @@ PRODUCT_MODEL := SM-A127F
 PRODUCT_BRAND := samsung
 PRODUCT_MANUFACTURER := samsung
 PRODUCT_GMS_CLIENTID_BASE := android-samsung
-TARGET_RECOVERY_PIXEL_FORMAT := "RGBX_8888"
-TARGET_RECOVERY_FSTAB := $(DEVICE_PATH)/recovery/root/system/etc/recovery.fstab
-
-#Properties
-TW_OVERRIDE_SYSTEM_PROPS := \
-    "ro.build.fingerprint=ro.system.build.fingerprint;ro.build.version.incremental"
