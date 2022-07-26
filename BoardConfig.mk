@@ -136,3 +136,7 @@ TARGET_USES_MKE2FS := true
 TW_NO_LEGACY_PROPS := true
 TW_NO_BIND_SYSTEM := true
 TW_USE_MODEL_HARDWARE_ID_FOR_DEVICE_ID := true
+
+# LZMA compression for recovery's & kernel ramdisk....
+BOARD_CUSTOM_BOOTIMG_MK := device/samsung/a12s/custombootimg.mk
+BOARD_CANT_BUILD_RECOVERY_FROM_BOOT_PATCH := true
