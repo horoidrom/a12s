@@ -27,10 +27,6 @@ $(call inherit-product, vendor/twrp/config/common.mk)
 $(call inherit-product, device/samsung/a12s/device.mk)
 
 
-# Charger
-PRODUCT_PACKAGES += \
-    charger_res_images
-
 PRODUCT_COPY_FILES += $(call find-copy-subdir-files,*,device/samsung/a12s/recovery/root,recovery/root)
 
 ## Device identifier. This must come after all inclusions
