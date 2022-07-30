@@ -54,7 +54,7 @@ TARGET_BOARD_PLATFORM := universal3830
 TARGET_BOARD_PLATFORM_GPU := mali-g52
 
 # Kernel
-TARGET_PREBUILT_KERNEL := device/samsung/a12s/prebuilt/Image
+TARGET_PREBUILT_KERNEL := device/samsung/a12s/prebuilt/Image.gz
 TARGET_PREBUILT_DTB := device/samsung/a12s/prebuilt/dtb
 BOARD_PREBUILT_DTBOIMAGE := device/samsung/a12s/prebuilt/recoverydtbo
 #BOARD_INCLUDE_DTB_IN_BOOTIMG := true
@@ -136,10 +136,4 @@ TW_NO_LEGACY_PROPS := true
 TW_NO_BIND_SYSTEM := true
 TW_USE_MODEL_HARDWARE_ID_FOR_DEVICE_ID := true
 TW_USE_TOOLBOX := true
-BOARD_HAS_NO_REAL_SDCARD := true
-TW_DISABLE_TTF:= true
-TW_EXTRA_LANGUAGES := flase
-TW_EXCLUDE_MTP := true
-TW_EXCLUDE_TZDATA := true
-TW_EXCLUDE_NANO := true
 
